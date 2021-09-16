@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests"  name="suite">
+  <test name="JobScrapper_Selenium" >
+      <parameter name="keyWord" value="SELENIUM" />
+      <classes>
+      <class name="JobScrapping.ParameterizedClass"/>
+    </classes>
+  </test>
+   <test name="JobScrapper_API" >
+    <parameter name="keyWord" value="API TESTING" />
+    <classes>
+      <class name="JobScrapping.ParameterizedClass"/>
+    </classes>
+  </test>
+  <test name="JobScrapper_Postman" >
+    <parameter name="keyWord" value="POSTMAN" />
+    <classes>
+      <class name="JobScrapping.ParameterizedClass"/>
+    </classes>
+  </test>
+  <test name="JobScrapper_RESTASSURED" >
+    <parameter name="keyWord" value="RESTASSURED" />
+    <classes>
+      <class name="JobScrapping.ParameterizedClass"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

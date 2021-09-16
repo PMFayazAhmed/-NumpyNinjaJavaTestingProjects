@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+    
+      <class name="SeleniumAutomation.NewTest"/>
+	  <class name="SeleniumAutomation.Locators"/>
+	  
+	   </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
