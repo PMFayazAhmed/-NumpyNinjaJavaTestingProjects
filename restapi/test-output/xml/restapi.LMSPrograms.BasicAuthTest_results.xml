@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.490">
+    <properties></properties>
+
+
+
+            <testcase
+                name="GetBasicAuth"
+                time="3.490"
+                classname="restapi.LMSPrograms.BasicAuthTest">
+            </testcase>
+</testsuite>
