@@ -3,17 +3,17 @@ package restapi.LMSPrograms;
 import java.util.HashMap;
 
 import org.json.simple.JSONObject;
-//import org.testng.annotations.Test;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 import dataProvider.ConfigReader;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-
+@Test
 public class AddAProgram {
 
 	private int iAuthStatus;
-	 @Test
+	 
 	public void AddProgram(){
 		String path = "/programs";
 		iAuthStatus =  BasicAuthTest.GetBasicAuth();

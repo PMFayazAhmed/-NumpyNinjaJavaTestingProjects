@@ -29,8 +29,8 @@ public class BasicAuthTest {
 				  .statusCode(200)
 				  .extract().response();
 	
-		//System.out.println(response.asPrettyString());
-		//System.out.println(response.getStatusCode());
+		System.out.println(response.asPrettyString());
+		System.out.println(response.getStatusCode());
 		return response.getStatusCode();			
 	
 			
