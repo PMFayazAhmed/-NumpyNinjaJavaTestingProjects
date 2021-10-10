@@ -1,0 +1,184 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User uses Basic Authentication",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3902034400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am a authorised user",
+            "match": {
+              "location": "StepDefinition.Steps.i_am_a_authorised_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-10T15:51:59.186Z",
+        "line": 9,
+        "name": "Authorised User is able to add a program",
+        "description": "",
+        "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-add-a-program",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5995700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter details for a new Program",
+            "match": {
+              "location": "StepDefinition.Steps.i_enter_details_for_a_new_program()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1725301900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I use Http Post request",
+            "match": {
+              "location": "StepDefinition.Steps.i_use_http_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 467668800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The program is added",
+            "match": {
+              "location": "StepDefinition.Steps.the_program_is_added()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1995600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Status Code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinition.Steps.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User uses Basic Authentication",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 441759900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am a authorised user",
+            "match": {
+              "location": "StepDefinition.Steps.i_am_a_authorised_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-10T15:52:05.442Z",
+        "line": 15,
+        "name": "Authorised User is able to get list of programs",
+        "description": "",
+        "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-get-list-of-programs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 829446000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "A List of programs are available",
+            "match": {
+              "location": "StepDefinition.Steps.a_list_of_programs_are_available()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 446003700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I Use http GET request",
+            "match": {
+              "location": "StepDefinition.Steps.i_use_http_get_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 595002100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am able to see the list of programs",
+            "match": {
+              "location": "StepDefinition.Steps.i_am_able_to_see_the_list_of_programs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Status Code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinition.Steps.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "End to End Tests for LMSAPI",
+    "description": "  Description: The purpose of this is to create feature and step definitions for testing API\n  \n  LMS API URL: https://lms-program-rest-service.herokuapp.com",
+    "id": "end-to-end-tests-for-lmsapi",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functionalTests/End2End.feature",
+    "tags": []
+  }
+]

@@ -12,7 +12,7 @@ public class ConfigReader {
 
     private ConfigReader() {
 		BufferedReader reader;
-	    	String propertyFilePath = "D:\\Users\\Sukanya\\eclipse-workspace\\restapi\\src\\test\\resources\\application.properties";
+	    	String propertyFilePath = "F:\\git\\NumpyNinjaProjectsRepo\\restapi\\src\\test\\resources\\application.properties";
 	        try {
 	            reader = new BufferedReader(new FileReader(propertyFilePath));
 	            properties = new Properties();
