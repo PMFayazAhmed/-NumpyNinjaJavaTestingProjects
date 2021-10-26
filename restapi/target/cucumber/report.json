@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3902034400,
+              "duration": 3618083000,
               "status": "passed"
             },
             "line": 7,
@@ -24,17 +24,17 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-10T15:51:59.186Z",
+        "start_timestamp": "2021-10-22T18:32:01.065Z",
         "line": 9,
         "name": "Authorised User is able to add a program",
         "description": "",
         "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-add-a-program",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5995700,
+              "duration": 4000900,
               "status": "passed"
             },
             "line": 10,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1725301900,
+              "duration": 1858713600,
               "status": "passed"
             },
             "line": 11,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 467668800,
+              "duration": 471310000,
               "status": "passed"
             },
             "line": 12,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 1995600,
+              "duration": 1992700,
               "status": "passed"
             },
             "line": 13,
@@ -97,7 +97,7 @@
         "steps": [
           {
             "result": {
-              "duration": 441759900,
+              "duration": 448631800,
               "status": "passed"
             },
             "line": 7,
@@ -110,17 +110,17 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-10T15:52:05.442Z",
+        "start_timestamp": "2021-10-22T18:32:07.178Z",
         "line": 15,
         "name": "Authorised User is able to get list of programs",
         "description": "",
         "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-get-list-of-programs",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 829446000,
+              "duration": 891494500,
               "status": "passed"
             },
             "line": 16,
@@ -132,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 446003700,
+              "duration": 999800,
               "status": "passed"
             },
             "line": 17,
@@ -144,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 595002100,
+              "duration": 640816300,
               "status": "passed"
             },
             "line": 18,
@@ -159,6 +159,97 @@
               "status": "passed"
             },
             "line": 19,
+            "name": "Status Code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinition.Steps.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User uses Basic Authentication",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 412021200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am a authorised user",
+            "match": {
+              "location": "StepDefinition.Steps.i_am_a_authorised_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T18:32:09.237Z",
+        "line": 29,
+        "name": "Authorised User is able to remove a program",
+        "description": "",
+        "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-remove-a-program;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 677059500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "A List of programs are available",
+            "match": {
+              "location": "StepDefinition.Steps.a_list_of_programs_are_available()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 441784200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I Use http DELETE request for 1162",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1162",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.Steps.i_use_http_delete_request_for(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 411334800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am able to remove the program",
+            "match": {
+              "location": "StepDefinition.Steps.i_am_able_to_remove_the_program()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
             "name": "Status Code is 200",
             "match": {
               "arguments": [

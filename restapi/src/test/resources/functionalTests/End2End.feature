@@ -6,14 +6,24 @@ Feature: End to End Tests for LMSAPI
   Background: User uses Basic Authentication
     Given I am a authorised user
 
-  Scenario: Authorised User is able to add a program
+  Scenario Outline: Authorised User is able to add a program
     Given I enter details for a new Program
     When I use Http Post request
     Then The program is added
     And Status Code is 200
 
-  Scenario: Authorised User is able to get list of programs
+  Scenario Outline: Authorised User is able to get list of programs
     Given A List of programs are available
     When I Use http GET request
     Then I am able to see the list of programs
     And Status Code is 200
+
+  Scenario Outline: Authorised User is able to remove a program
+    Given A List of programs are available
+    When I Use http DELETE request for <ProgramID>
+    Then I am able to remove the program
+    And Status Code is 200
+
+    Examples: 
+      | ProgramID |
+      |        1162 |

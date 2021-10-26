@@ -21,8 +21,9 @@ import restapi.LMSPrograms.BasicAuthTest;
 public class Steps {
 	private int iAuthStatus=0;
 	HashMap<String,Object> requestParams;
+	Response response= null;
 	JSONObject requestParamsJSON;
-	String NewProgramID;
+	String ProgramID;
 	int Statuscode;
 	
 	@Given("I am a authorised user")
@@ -57,12 +58,12 @@ public class Steps {
 	    // Write code here that turns the phrase above into concrete actions
 		String path = "/programs";
 		//iAuthStatus =  BasicAuthTest.GetBasicAuth();
-		Response response =  RestAssured.given().auth()
+		 response =  RestAssured.given().auth()
 				  .basic(ConfigReader.getInstance().getUserID(), ConfigReader.getInstance().getPassword())
 				  .header("Content-Type", "application/json")
 				  .body(requestParamsJSON.toJSONString())					  
 				  .post(path);
-		NewProgramID=  response.then().contentType(ContentType.JSON).extract().path("programId").toString();
+		ProgramID=  response.then().contentType(ContentType.JSON).extract().path("programId").toString();
 		String jsonString = response.asPrettyString();
 		System.out.println(jsonString);
 		
@@ -71,12 +72,12 @@ public class Steps {
 	@Then("The program is added")
 	public void the_program_is_added() {
 	    // Write code here that turns the phrase above into concrete actions
-		String path = "/programs/" + NewProgramID;
-		Response response =  RestAssured.given().auth()
+		String path = "/programs/" + ProgramID;
+		 response =  RestAssured.given().auth()
 				  .basic(ConfigReader.getInstance().getUserID(), ConfigReader.getInstance().getPassword())
 				  .get(path);
 				  
-		Assert.assertEquals(NewProgramID, response.then().contentType(ContentType.JSON).extract().path("programId").toString());
+		Assert.assertEquals(ProgramID, response.then().contentType(ContentType.JSON).extract().path("programId").toString());
 		Statuscode = response.getStatusCode();
 	   // throw new io.cucumber.java.PendingException();
 	}
@@ -92,7 +93,7 @@ public class Steps {
 	public void a_list_of_programs_are_available() {
 	    // Write code here that turns the phrase above into concrete actions
 		String path = "/programs";
-		Response response =  RestAssured.given().auth()
+		 response =  RestAssured.given().auth()
 				  .basic(ConfigReader.getInstance().getUserID(), ConfigReader.getInstance().getPassword())
 				  .get(path)
 				  .then()
@@ -101,17 +102,14 @@ public class Steps {
 		
 		List<Map<String, String>> programs = JsonPath.from(response.asString()).get("programs");
 		Assert.assertTrue(programs.size() > 0);
+		Statuscode = response.getStatusCode();
 	}
 
 	@When("I Use http GET request")
 	public void i_use_http_get_request() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
-		String path = "/programs";
-		Response response =  RestAssured.given().auth()
-				  .basic(ConfigReader.getInstance().getUserID(), ConfigReader.getInstance().getPassword())
-				  .get(path);
-		Statuscode = response.getStatusCode();
+		
 		Assert.assertEquals(200, Statuscode);
 	}
 
@@ -120,12 +118,44 @@ public class Steps {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
 		String path = "/programs";
-		Response response =  RestAssured.given().auth()
+		 response =  RestAssured.given().auth()
 				  .basic(ConfigReader.getInstance().getUserID(), ConfigReader.getInstance().getPassword())
 				  .get(path);
 		Statuscode = response.getStatusCode();
 		System.out.println(response.asPrettyString());
 		
+	}
+	
+	@When("I Use http DELETE request for {int}")
+	public void i_use_http_delete_request_for(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+		String path = "/programs/" + int1.toString();
+		 response =  RestAssured.given().auth()
+				  .basic(ConfigReader.getInstance().getUserID(), ConfigReader.getInstance().getPassword())
+				  .delete(path)
+				  .then()
+				  .statusCode(200)
+				  .extract().response();
+		 	Statuscode = response.getStatusCode();
+			System.out.println(response.asPrettyString());
+			Assert.assertEquals(Statuscode, 200);
+			ProgramID = int1.toString();
+			
+	}
+
+	@Then("I am able to remove the program")
+	public void i_am_able_to_remove_the_program() {
+	    // Write code here that turns the phrase above into concrete actions
+		String path = "/programs/" + ProgramID;
+		 response =  RestAssured.given().auth()
+				  .basic(ConfigReader.getInstance().getUserID(), ConfigReader.getInstance().getPassword())
+				  .get(path);
+		Statuscode = response.getStatusCode();
+		//System.out.println(response.asPrettyString());
+		Assert.assertEquals(200, Statuscode);
+
+		//List<Map<String, String>> programs = JsonPath.from(response.asString()).get("programs");
+		//Assert.assertEquals(0, programs.size());
 	}
 
 
