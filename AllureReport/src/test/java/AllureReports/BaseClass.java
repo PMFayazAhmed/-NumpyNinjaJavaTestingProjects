@@ -11,7 +11,7 @@ public class BaseClass {
 
 	public WebDriver initialize_driver() {
 
-		System.setProperty("webdriver.chrome.driver","E:\\API Testing\\Selenium\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","E:\\API Testing\\Selenium\\Drivers\\94\\chromedriver.exe");
 		 driver = new ChromeDriver();
 		  
 		 	
