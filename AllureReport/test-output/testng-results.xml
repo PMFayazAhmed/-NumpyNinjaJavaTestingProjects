@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-20T18:09:44Z" name="Suite" finished-at="2021-09-20T18:10:00Z" duration-ms="16415">
+  <suite started-at="2021-10-28T20:57:31Z" name="Suite" finished-at="2021-10-28T20:57:44Z" duration-ms="12682">
     <groups>
     </groups>
-    <test started-at="2021-09-20T18:09:44Z" name="Test" finished-at="2021-09-20T18:10:00Z" duration-ms="16415">
+    <test started-at="2021-10-28T20:57:31Z" name="Test" finished-at="2021-10-28T20:57:44Z" duration-ms="12682">
       <class name="AllureReports.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AllureReports.Tests@7b3315a5]" started-at="2021-09-20T18:09:44Z" name="setUp" finished-at="2021-09-20T18:09:52Z" duration-ms="7893" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AllureReports.Tests@1f966492]" started-at="2021-10-28T20:57:31Z" name="setUp" finished-at="2021-10-28T20:57:38Z" duration-ms="6311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login()[pri:1, instance:AllureReports.Tests@7b3315a5]" started-at="2021-09-20T18:09:52Z" name="Login" finished-at="2021-09-20T18:09:55Z" duration-ms="3140" status="PASS">
+        <test-method signature="Login()[pri:1, instance:AllureReports.Tests@1f966492]" started-at="2021-10-28T20:57:38Z" name="Login" finished-at="2021-10-28T20:57:40Z" duration-ms="2600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="VerifyTitle()[pri:2, instance:AllureReports.Tests@7b3315a5]" started-at="2021-09-20T18:09:57Z" name="VerifyTitle" finished-at="2021-09-20T18:09:59Z" duration-ms="2082" status="FAIL">
+        <test-method signature="VerifyTitle()[pri:2, instance:AllureReports.Tests@1f966492]" started-at="2021-10-28T20:57:41Z" name="VerifyTitle" finished-at="2021-10-28T20:57:43Z" duration-ms="2168" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [OrangeHRM2] but found [OrangeHRM]]]>
@@ -28,7 +28,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at AllureReports.Tests.VerifyTitle(Tests.java:55)
+at AllureReports.Tests.VerifyTitle(Tests.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,14 +60,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitle -->
-        <test-method signature="registeration()[pri:3, instance:AllureReports.Tests@7b3315a5]" started-at="2021-09-20T18:10:00Z" name="registeration" finished-at="2021-09-20T18:10:00Z" duration-ms="7" status="SKIP">
+        <test-method signature="registeration()[pri:3, instance:AllureReports.Tests@1f966492]" started-at="2021-10-28T20:57:43Z" name="registeration" finished-at="2021-10-28T20:57:43Z" duration-ms="5" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skip this testcase]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skip this testcase
-at AllureReports.Tests.registeration(Tests.java:63)
+at AllureReports.Tests.registeration(Tests.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,7 +99,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeration -->
-        <test-method is-config="true" signature="close()[pri:0, instance:AllureReports.Tests@7b3315a5]" started-at="2021-09-20T18:10:00Z" name="close" finished-at="2021-09-20T18:10:00Z" duration-ms="480" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:AllureReports.Tests@1f966492]" started-at="2021-10-28T20:57:43Z" name="close" finished-at="2021-10-28T20:57:44Z" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

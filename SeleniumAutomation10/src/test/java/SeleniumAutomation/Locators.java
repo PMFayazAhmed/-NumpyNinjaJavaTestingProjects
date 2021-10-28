@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 
 public class Locators {
@@ -33,7 +35,14 @@ public class Locators {
 			   driver.findElement(By.className("button")).click();
 			   Thread.sleep(3000);
 			 
+			   WebDriverWait wait = new WebDriverWait(driver, 10);
+			   WebElement messageElement = wait.until(
+			          ExpectedConditions.presenceOfElementLocated(By.id("loginResponse")) ; 
 
+			   // Run a test
+			   String message              = messageElement.getText();
+			   String successMsg      = "Welcome to foo. You logged in successfully.”;
+			   Assert.assertEquals (message, successMsg); 
 			  
 		
 		
