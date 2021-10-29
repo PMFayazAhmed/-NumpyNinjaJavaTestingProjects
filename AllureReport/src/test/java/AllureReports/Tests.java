@@ -65,6 +65,7 @@ public class Tests extends BaseClass {
   
   @AfterTest
   public void close() {
+	  driver.close();
 	  driver.quit();
   }
 
