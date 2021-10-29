@@ -32,7 +32,15 @@ public class TestExecutionListener implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("I am in onTestSuccess method " + getTestMethodName(result) + " passed");
+		//	Object testClass = iTestResult.getInstance();
+			WebDriver driver = BaseClass.getDriver();
+			// Allure ScreenShot and SaveTestLog
+			if (driver instanceof WebDriver) {
+				System.out.println("Screenshot captured for test case:" + getTestMethodName(result));
+				saveFailureScreenShot(driver);
+			}
+			saveTextLog(getTestMethodName(result) + " passed and screenshot taken!");	
 	}
 
 	@Override
