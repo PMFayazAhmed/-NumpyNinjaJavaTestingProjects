@@ -1,0 +1,2 @@
+file:src/test/resources/parallel/scenarios.feature:3:6
+file:src/test/resources/parallel/scenario-outlines.feature:8:9

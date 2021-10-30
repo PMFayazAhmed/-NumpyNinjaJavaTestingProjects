@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="parallel.RunCucumberTest" time="1.487" tests="4" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Users\Sukanya\eclipse-workspace\CucumberTest\target\test-classes;D:\Users\Sukanya\eclipse-workspace\CucumberTest\target\classes;C:\Users\Sukanya Ruthvik\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Sukanya Ruthvik\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="E:\API Testing\Selenium\eclipse-java-2021-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Sukanya Ruthvik\AppData\Local\Temp\surefire4810298972773610157\surefirebooter4546669948478634813.jar C:\Users\Sukanya Ruthvik\AppData\Local\Temp\surefire4810298972773610157 2021-10-30T11-21-57_336-jvmRun1 surefire18076546337222801431tmp surefire_03184045103383174388tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Users\Sukanya\eclipse-workspace\CucumberTest\target\test-classes;D:\Users\Sukanya\eclipse-workspace\CucumberTest\target\classes;C:\Users\Sukanya Ruthvik\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Sukanya Ruthvik\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\Sukanya Ruthvik\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\Sukanya Ruthvik\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Sukanya Ruthvik"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="E:\API Testing\Selenium\eclipse-java-2021-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Users\Sukanya\eclipse-workspace\CucumberTest"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Sukanya Ruthvik\AppData\Local\Temp\surefire4810298972773610157\surefirebooter4546669948478634813.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="16.0.1+9-24"/>
+    <property name="user.name" value="Sukanya Ruthvik"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Sukanya Ruthvik\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\SUKANY~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="user.dir" value="D:\Users\Sukanya\eclipse-workspace\CucumberTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="E:\API Testing\Selenium\eclipse-java-2021-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:/API Testing/Selenium/eclipse-java-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;E:/API Testing/Selenium/eclipse-java-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\R\R-4.0.0\bin\x64;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\Program Files\Java\jdk-11.0.11\bin;D:\Program Files\apache-maven-3.8.1\bin;D:\Gradle\gradle-6.0.1\bin;d:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\bin;D:\Users\Sukanya Ruthvik\AppData\Local\Programs\Python\Python39\Scripts;E:\API Testing\Selenium\allure-commandline-2.13.0\allure-2.13.0\bin;C:\Program Files\Git\cmd;C:\Users\Sukanya Ruthvik\AppData\Local\Microsoft\WindowsApps;d:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\bin;C:\Users\Sukanya Ruthvik\.dotnet\tools;C:\Users\Sukanya Ruthvik\AppData\Local\atom\bin;E:\API Testing\Selenium\eclipse-java-2021-06-R-win32-x86_64\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="16.0.1+9-24"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="Scenario Outline Row 1" classname="Scenario Outlines feature file" time="0.284">
+    <error message="The step &apos;Step from &apos;Scenario Outline Row 1&apos; in &apos;scenario-outlines&apos; feature file&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;Step from {string} in {string} feature file&quot;)&#10;public void step_from_in_feature_file(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'Step from 'Scenario Outline Row 1' in 'scenario-outlines' feature file' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Step from {string} in {string} feature file")
+public void step_from_in_feature_file(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: Scenario Outline Row 1                                       # src/test/resources/parallel/scenario-outlines.feature:8
+  Given Step from 'Scenario Outline Row 1' in 'scenario-outlines' feature file # null
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario Outline Row 2" classname="Scenario Outlines feature file" time="0.011">
+    <error message="The step &apos;Step from &apos;Scenario Outline Row 2&apos; in &apos;scenario-outlines&apos; feature file&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;Step from {string} in {string} feature file&quot;)&#10;public void step_from_in_feature_file(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'Step from 'Scenario Outline Row 2' in 'scenario-outlines' feature file' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Step from {string} in {string} feature file")
+public void step_from_in_feature_file(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: Scenario Outline Row 2                                       # src/test/resources/parallel/scenario-outlines.feature:9
+  Given Step from 'Scenario Outline Row 2' in 'scenario-outlines' feature file # null
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario Number One" classname="Scenarios feature file" time="0.016">
+    <error message="The step &apos;Step from &apos;Scenario 1&apos; in &apos;scenarios&apos; feature file&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;Step from {string} in {string} feature file&quot;)&#10;public void step_from_in_feature_file(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'Step from 'Scenario 1' in 'scenarios' feature file' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Step from {string} in {string} feature file")
+public void step_from_in_feature_file(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario: Scenario Number One                              # src/test/resources/parallel/scenarios.feature:3
+  Given Step from 'Scenario 1' in 'scenarios' feature file # null
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario Number Two" classname="Scenarios feature file" time="0.008">
+    <error message="The step &apos;Step from &apos;Scenario 2&apos; in &apos;scenarios&apos; feature file&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;Step from {string} in {string} feature file&quot;)&#10;public void step_from_in_feature_file(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'Step from 'Scenario 2' in 'scenarios' feature file' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Step from {string} in {string} feature file")
+public void step_from_in_feature_file(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario: Scenario Number Two                              # src/test/resources/parallel/scenarios.feature:6
+  Given Step from 'Scenario 2' in 'scenarios' feature file # null
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-30T16:22:00.391Z",
+        "line": 8,
+        "name": "Scenario Outline Row 1",
+        "description": "",
+        "id": "scenario-outlines-feature-file;\u003cscen-out-row-num\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "Step from \u0027Scenario Outline Row 1\u0027 in \u0027scenario-outlines\u0027 feature file",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-30T16:22:00.516Z",
+        "line": 9,
+        "name": "Scenario Outline Row 2",
+        "description": "",
+        "id": "scenario-outlines-feature-file;\u003cscen-out-row-num\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "Step from \u0027Scenario Outline Row 2\u0027 in \u0027scenario-outlines\u0027 feature file",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Scenario Outlines feature file",
+    "description": "",
+    "id": "scenario-outlines-feature-file",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/parallel/scenario-outlines.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-30T16:22:00.529Z",
+        "line": 3,
+        "name": "Scenario Number One",
+        "description": "",
+        "id": "scenarios-feature-file;scenario-number-one",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "Step from \u0027Scenario 1\u0027 in \u0027scenarios\u0027 feature file",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-30T16:22:00.544Z",
+        "line": 6,
+        "name": "Scenario Number Two",
+        "description": "",
+        "id": "scenarios-feature-file;scenario-number-two",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Step from \u0027Scenario 2\u0027 in \u0027scenarios\u0027 feature file",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Scenarios feature file",
+    "description": "",
+    "id": "scenarios-feature-file",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/parallel/scenarios.feature",
+    "tags": []
+  }
+]
