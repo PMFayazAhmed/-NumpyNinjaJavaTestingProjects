@@ -120,35 +120,32 @@
    </dependency>
   </dependencies>
   <profiles>
-  <profile>
+  <profile>  
   	<build>  
      <plugins>
        <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-compiler-plugin</artifactId>
-         <version>3.1</version>
-         <configuration>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
 					<fork> true </fork>
 					<executable>D:\Program Files\Java\jdk-11.0.11\bin\javac.exe</executable>
 					<source>1.8</source>
 					<target>1.8</target>
-		</configuration>
-         <executions>
-                      <execution>
-                          <id>RunnerTest</id>                          
-                      </execution>
-                        </executions>
-       </plugin> 
+				</configuration>
+			</plugin>
        <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20</version>
 				<configuration>
+					<test>runners/RunnerTest.java</test>
+					
 					<testFailureIgnore>true</testFailureIgnore>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
-				</configuration>
+				</configuration>			
+				
 				<dependencies>
 					<dependency>
 						<groupId>org.aspectj</groupId>
