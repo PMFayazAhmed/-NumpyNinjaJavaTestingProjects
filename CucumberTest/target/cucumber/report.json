@@ -3,100 +3,271 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-10-30T16:22:00.391Z",
-        "line": 8,
-        "name": "Scenario Outline Row 1",
-        "description": "",
-        "id": "scenario-outlines-feature-file;\u003cscen-out-row-num\u003e;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "Step from \u0027Scenario Outline Row 1\u0027 in \u0027scenario-outlines\u0027 feature file",
-            "match": {},
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-30T16:22:00.516Z",
-        "line": 9,
-        "name": "Scenario Outline Row 2",
-        "description": "",
-        "id": "scenario-outlines-feature-file;\u003cscen-out-row-num\u003e;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "Step from \u0027Scenario Outline Row 2\u0027 in \u0027scenario-outlines\u0027 feature file",
-            "match": {},
-            "keyword": "Given "
-          }
-        ]
-      }
-    ],
-    "name": "Scenario Outlines feature file",
-    "description": "",
-    "id": "scenario-outlines-feature-file",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/parallel/scenario-outlines.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2021-10-30T16:22:00.529Z",
-        "line": 3,
-        "name": "Scenario Number One",
-        "description": "",
-        "id": "scenarios-feature-file;scenario-number-one",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "Step from \u0027Scenario 1\u0027 in \u0027scenarios\u0027 feature file",
-            "match": {},
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-30T16:22:00.544Z",
         "line": 6,
-        "name": "Scenario Number Two",
+        "name": "User uses Basic Authentication",
         "description": "",
-        "id": "scenarios-feature-file;scenario-number-two",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3626127900,
+              "status": "passed"
             },
             "line": 7,
-            "name": "Step from \u0027Scenario 2\u0027 in \u0027scenarios\u0027 feature file",
-            "match": {},
+            "name": "I am a authorised user",
+            "match": {
+              "location": "parallel.StepDefs.i_am_a_authorised_user()"
+            },
             "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-30T21:10:45.695Z",
+        "line": 9,
+        "name": "Authorised User is able to add a program",
+        "description": "",
+        "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-add-a-program",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter details for a new Program",
+            "match": {
+              "location": "parallel.StepDefs.i_enter_details_for_a_new_program()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1550711100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I use Http Post request",
+            "match": {
+              "location": "parallel.StepDefs.i_use_http_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 468987100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The program is added",
+            "match": {
+              "location": "parallel.StepDefs.the_program_is_added()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1998100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Status Code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "parallel.StepDefs.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User uses Basic Authentication",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 463587300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am a authorised user",
+            "match": {
+              "location": "parallel.StepDefs.i_am_a_authorised_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-30T21:10:51.486Z",
+        "line": 15,
+        "name": "Authorised User is able to get list of programs",
+        "description": "",
+        "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-get-list-of-programs",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1081772400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "A List of programs are available",
+            "match": {
+              "location": "parallel.StepDefs.a_list_of_programs_are_available()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3001100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I Use http GET request",
+            "match": {
+              "location": "parallel.StepDefs.i_use_http_get_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 723320100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am able to see the list of programs",
+            "match": {
+              "location": "parallel.StepDefs.i_am_able_to_see_the_list_of_programs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Status Code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "parallel.StepDefs.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User uses Basic Authentication",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 482000100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am a authorised user",
+            "match": {
+              "location": "parallel.StepDefs.i_am_a_authorised_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-30T21:10:53.779Z",
+        "line": 29,
+        "name": "Authorised User is able to remove a program",
+        "description": "",
+        "id": "end-to-end-tests-for-lmsapi;authorised-user-is-able-to-remove-a-program;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 781148300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "A List of programs are available",
+            "match": {
+              "location": "parallel.StepDefs.a_list_of_programs_are_available()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 494716300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I Use http DELETE request for 1740",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1740",
+                  "offset": 30
+                }
+              ],
+              "location": "parallel.StepDefs.i_use_http_delete_request_for(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 478696900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am able to remove the program",
+            "match": {
+              "location": "parallel.StepDefs.i_am_able_to_remove_the_program()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Status Code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "parallel.StepDefs.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Scenarios feature file",
-    "description": "",
-    "id": "scenarios-feature-file",
+    "name": "End to End Tests for LMSAPI",
+    "description": "  Description: The purpose of this is to create feature and step definitions for testing API\n  \n  LMS API URL: https://lms-program-rest-service.herokuapp.com",
+    "id": "end-to-end-tests-for-lmsapi",
     "keyword": "Feature",
     "uri": "file:src/test/resources/parallel/scenarios.feature",
     "tags": []
