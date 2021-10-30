@@ -5,8 +5,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>restapi</name>
   <properties>
-		<aspectj.version>1.8.10</aspectj.version>
-	</properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <aspectj.version>1.8.10</aspectj.version>
+</properties>
+  
   <dependencies>
  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
