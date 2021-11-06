@@ -51,7 +51,7 @@ public class Tests extends BaseClass {
   public void VerifyTitle() throws InterruptedException
   {	  
 		  Thread.sleep(2000);
-		  Assert.assertEquals(driver.getTitle(), "Orange HRM");
+		  Assert.assertEquals(driver.getTitle(), "Orange HRM2");
 		  	
   }
   
