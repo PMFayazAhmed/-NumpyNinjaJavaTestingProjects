@@ -5,13 +5,15 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 	public WebDriver driver;
 	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
 
 	public WebDriver initialize_driver() {
 
-		System.setProperty("webdriver.chrome.driver","E:\\API Testing\\Selenium\\Drivers\\94\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		 driver = new ChromeDriver();
 		  
 		 	
